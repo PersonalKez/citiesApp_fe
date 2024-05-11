@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cities App Frontend</title>
+        <meta name="frontend for cityApp" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script src="scripts.js" async defer></script>
+        <h1>Cities Table</h1>
+        <table id="cityTable">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Country</th>
+            </tr>
+        </table>
+        <br><br><br><br><br><br>
+        <label for="action">Choose an action:</label>
+        <select name="action" id="action">
+          <option value="edit">Edit a city entry</option>
+          <option value="create">Add a city</option>
+          <option value="delete">Delete a city</option>
+        </select> <br><br>
+        <form action="" method="" id="city-action-form">
+            <label for="city_name">City Name:</label>
+            <input type="text" id="city_name" name="city_name"><br><br>
+            <label for="date">Date Visited:</label>
+            <input type="text" id="date" name="date"><br><br>    
+            <label for="country">Country of City:</label>
+            <input type="text" id="country" name="country"><br><br> 
+            <label for="new_city_name">Replacement City Name (If Editing):</label>
+            <input type="text" id="new_city_name" name="new_city_name"><br><br>
+            </form>
+            <br><br>
+            <button type="button" form="city-action-form" value="Submit" onclick="formHandler(this.form)">Submit</button> 
+    </body>
+</html>
